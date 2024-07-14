@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: fit-content;
+    width: 50%;
+    background-color: white;
+    padding:.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.heading {
+    background-color: lightseagreen;
+    height: fit-content;
+    width: 100%;
+    padding: 1vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.games {
+    height: fit-content;
+    width: 100%;
+    padding: .5vw;
+    background-color: lightpink;
+}
+
+.game {
+    height: fit-content;
+    width: 100%;
+    background-color: white;
+    padding: 1vw 2vw;
+    margin: .3vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+button {
+    font-size: 1.1vw;
+    padding: .7vw 1.2vw;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: crimson;
+    font-weight: 500;
+    margin-top: 1vw;
+    margin-bottom: .5vw;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.new-game {
+    height: fit-content;
+    width: 25%;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: none;
+}
+
+.new-game input {
+    width: 100%;
+    font-size: 1.1vw;
+    padding: .8vw 1vw;
+    border-radius: 50px;
+    border: 1px solid #909090;
+    outline: none;
+    margin: .5vw 0;
+}
+
+.new-game label {
+    font-size: 1vw;
+}
+
+.new-game i {
+    position: absolute;
+    font-size: 1.5vw;
+    right: 3%;
+    top: 5%;
+    color: #909090;
+}
+
+.new-game i:hover {
+    cursor: pointer;
+}
